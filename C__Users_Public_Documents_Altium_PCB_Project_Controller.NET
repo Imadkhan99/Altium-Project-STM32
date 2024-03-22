@@ -1,0 +1,134 @@
+PARTS LIST
+
+0.1uF             CAP_0805        C1
+0.1uF             CAP_0805        C2
+1uF               CAP_0805        C3
+22pF              CAP_0805        C4
+0.1uF             CAP_0805        C5
+0.1uF             CAP_0805        C6
+0.1uF             CAP_0805        C7
+0.1uF             CAP_0805        C8
+22pF              CAP_0805        C9
+22pF              CAP_0805        C10
+0.1uF             CAP_0805        C11
+MICRO USB2.0      CON_10118192-0001LF_SMDJ1
+20X1 Bergstrip    CON20_100_40D72_TH_STJ2
+20X1 Bergstrip    CON20_100_40D72_TH_STJ3
+4X1 Bergstrip     CON4_100_40D72_TH_ST_MALEJ4
+2X3 Berg Strip    CON6_100_59D78_TH_ST_DuplicateJ5
+RED LED           LED_0805        LED1
+RED LED           LED_0805        LED2
+10K               RES_0805        R1
+10K               RES_0805        R2
+10Mohm            RES_0805        R3
+1K                RES_0805        R4
+1K                RES_0805        R5
+10K               RES_0805        R6
+10K               RES_0805        R7
+RT9193-33GB       SOT23-5         REG1
+TACT SWITCH       SW_342_SMD      SW1
+STM32F103C8T6     LQFP-48_19.6_393_58X11_SMDU1
+8MHz              XTAL_314_240X47_SMDY1
+32.768KHz         XTAL_MC-405 32.7680K-G3Y2
+EOS
+NET LIST
+
+NODENAME XTALD            $
+    U1         4  Y2         4
+NODENAME XTALC            $
+    U1         3  Y2         1
+NODENAME XTALB            $
+    C10        2  R3         2  U1         6  Y1         2
+NODENAME XTALA            $
+    C9         2  R3         1  U1         5  Y1         1
+NODENAME SWDIO            $
+    J4         3  U1        34
+NODENAME SWCLK            $
+    J4         2  U1        37
+NODENAME PC13             $
+    J3         4  U1         2
+NODENAME PB15             $
+    J2        14  U1        28
+NODENAME PB14             $
+    J2        15  U1        27
+NODENAME PB13             $
+    J2        16  U1        26
+NODENAME PB12             $
+    J2        17  R5         1  U1        25
+NODENAME PB11             $
+    J3        17  U1        22
+NODENAME PB10             $
+    J3        16  U1        21
+NODENAME PB9              $
+    J3         3  U1        46
+NODENAME PB8              $
+    J3         2  U1        45
+NODENAME PB7              $
+    J2         3  U1        43
+NODENAME PB6              $
+    J2         4  U1        42
+NODENAME PB5              $
+    J2         5  U1        41
+NODENAME PB4              $
+    J2         6  U1        40
+NODENAME PB3              $
+    J2         7  U1        39
+NODENAME PB1              $
+    J3        15  U1        19
+NODENAME PB0              $
+    J3        14  U1        18
+NODENAME PA15             $
+    J2         8  U1        38
+NODENAME PA12             $
+    J2         9
+NODENAME PA11             $
+    J2        10
+NODENAME PA10             $
+    J2        11  U1        31
+NODENAME PA9              $
+    J2        12  U1        30
+NODENAME PA8              $
+    J2        13  U1        29
+NODENAME PA7              $
+    J3        13  U1        17
+NODENAME PA6              $
+    J3        12  U1        16
+NODENAME PA5              $
+    J3        11  U1        15
+NODENAME PA4              $
+    J3        10  U1        14
+NODENAME PA3              $
+    J3         9  U1        13
+NODENAME PA2              $
+    J3         8  U1        12
+NODENAME PA1              $
+    J3         7  U1        11
+NODENAME PA0              $
+    J3         6  U1        10
+NODENAME NRST             $
+    C11        2  J3         5  R7         1  SW1        2  U1         7
+NODENAME NetR6-1          $
+    R6         1  U1        20
+NODENAME NetR2-1          $
+    R2         1  U1        44
+NODENAME NetLED2_K        $
+    LED2       K  R5         2
+NODENAME NetLED1_K        $
+    LED1       K  R4         2
+NODENAME NetC4-2          $
+    C4         2  REG1       4
+NODENAME GND              $
+    C1         1  C2         1  C3         1  C4         1  C5         1  C6         1  C7         1  C8         1  C9         1  C10        1  C11        1  J1         5  J1         6  J1         7  J1         8  J1         9  J2         1  J2        19  J2        20  J3         1  J3        19  J3        20  J4         1  J5         5  J5         6  R4         1  REG1       2  SW1        1  U1         8  U1        23  U1        35  U1        47  Y2         2  Y2         3
+NODENAME D_P              $
+    J1         3  R1         1  U1        33
+NODENAME D_N              $
+    J1         2  U1        32
+NODENAME BOOT1            $
+    J5         4  R6         2
+NODENAME BOOT0            $
+    J5         3  R2         2
+NODENAME +5V              $
+    C1         2  J1         1  R1         2  REG1       1  REG1       3
+NODENAME +3V3             $
+    C2         2  C3         2  C5         2  C6         2  C7         2  C8         2  J2         2  J2        18  J3        18  J4         4  J5         1  J5         2  LED1       A  LED2       A  R7         2  REG1       5  U1         1  U1         9  U1        24  U1        36  U1        48
+EOS
